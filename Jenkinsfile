@@ -22,7 +22,7 @@ NEXUSIP = '172.31.1.104'
     stages {
         stage('Build') {
             steps {
-               sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=/usr/share/maven'
+               sh 'mvn clean install -U -DskipTests -Dmaven.repo.local=~/.m2/repository'
                }
                post {
                 success {

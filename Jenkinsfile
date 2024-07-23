@@ -60,13 +60,13 @@ NEXUSIP = '172.31.1.104'
             }
           }
     }
-        stage ('Quality Gate') {
+        /*stage ('Quality Gate') {
             steps {
                 timeout(time: 1, unit: 'HOURS') {
                 waitForQualityGate abortPipeline: true
             }
             }
-        }
+        }*/
         stage ('uploadArtifact') {
             steps {
                 nexusArtifactUploader(

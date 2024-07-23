@@ -54,6 +54,7 @@ NEXUSIP = '172.31.1.104'
                    -Dsonar.sources=src/ \
 -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/ \
                    -Dsonar.junit.reportsPath=target/surefire-reports/ \
+                   -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml
                    -Dsonar.jacoco.reportsPath=target/jacoco.ex
                    ec \
 -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml'''

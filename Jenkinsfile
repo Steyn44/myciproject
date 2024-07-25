@@ -70,7 +70,7 @@ pipeline {
         }
         
         // Quality Gate stage (uncomment if needed)
-        /*
+        
         stage('Quality Gate') {
             steps {
                 timeout(time: 1, unit: 'HOURS') {
@@ -78,7 +78,7 @@ pipeline {
                 }
             }
         }
-        */
+        
         
         stage('Upload Artifact') {
             steps {
